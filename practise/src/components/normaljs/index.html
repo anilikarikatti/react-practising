@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="first">
+        <label for="fname">first name</label>
+
+        <input type="text" id="fname" name="fname" class="fname">
+        <p class="f"></p>
+
+    </div>
+        <div class="last">
+        <label for="lname">last name</label>
+        <input type="text" id="lname" name="lname" class="lname">
+        <p class="l"></p>
+
+    </div>
+    <div>
+    </div>
+    <div>
+    </div>
+    <button class="btn">save profile</button>
+
+
+    <script>
+        let finput = document.querySelector('.fname');
+        let linput = document.querySelector('.lname');
+        let btn = document.querySelector('.btn');
+        let first = document.querySelector('.first');
+        let last = document.querySelector('.last');
+
+        let f = document.querySelector('.f');
+        let l = document.querySelector('.l');
+        
+        hide(f);
+        hide(l)
+        function show(e){
+            e.style.display = ''
+        }
+
+
+        function hide(e){
+            e.style.display='none'
+            // console.log(e.style);
+        }
+
+        function printProfile(){
+            btn.textContent = (btn.textContent == 'save profile')? 'Edit profile' : 'save profile';
+            if(btn.textContent!='save profile'){
+                hide(finput)
+                hide(linput)  
+                f.textContent = finput.value;
+                l.textContent = linput.value;
+
+                show(f)
+                show(l)
+            }
+            else{
+                hide(f)
+                hide(l)  
+                finput.value ="";
+                 linput.value="";
+
+                show(finput)
+                show(linput)
+            }
+        }
+        
+        function p(){
+
+        }
+
+        
+
+        btn.addEventListener('click',printProfile)
+    </script>
+</body>
+</html>
