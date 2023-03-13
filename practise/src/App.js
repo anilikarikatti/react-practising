@@ -74,6 +74,7 @@ import Forming from "./components/forming/second";
 
 import Myvideo from "./components/reference";
 
+import Graphs from "./components/charts";
 function App() {
   return (
     <>
@@ -81,7 +82,9 @@ function App() {
       {/* <MainDiv/> */}
       {/* <Forming/> */}
       {/* <Parents></Parents> */}
-      <Myvideo/>
+      {/* <Myvideo/> */}
+
+      <Graphs/>
     </>
   );
 }
