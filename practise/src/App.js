@@ -72,13 +72,16 @@
 import Parents from "./components/forming/form";
 import Forming from "./components/forming/second";
 
+import Myvideo from "./components/reference";
+
 function App() {
   return (
     <>
       {/* <p>hello world</p> */}
       {/* <MainDiv/> */}
       {/* <Forming/> */}
-      <Parents></Parents>
+      {/* <Parents></Parents> */}
+      <Myvideo/>
     </>
   );
 }
