@@ -75,6 +75,10 @@ import Forming from "./components/forming/second";
 import Myvideo from "./components/reference";
 
 import Graphs from "./components/charts";
+
+import Pavan_Task from "./components/pavan_task";
+
+import Todo from "./components/reducer/reducer_using";
 function App() {
   return (
     <>
@@ -84,7 +88,11 @@ function App() {
       {/* <Parents></Parents> */}
       {/* <Myvideo/> */}
 
-      <Graphs/>
+      {/* <Graphs/> */}
+
+        {/* <Pavan_Task/> */}
+
+        <Todo/>
     </>
   );
 }
