@@ -69,16 +69,20 @@
 
 
 
-import Parents from "./components/forming/form";
-import Forming from "./components/forming/second";
+// import Parents from "./components/forming/form";
+// import Forming from "./components/forming/second";
 
-import Myvideo from "./components/reference";
+// import Myvideo from "./components/reference";
 
-import Graphs from "./components/charts";
+// import Graphs from "./components/charts";
 
-import Pavan_Task from "./components/pavan_task";
+// import Pavan_Task from "./components/pavan_task";
 
-import Todo from "./components/reducer/reducer_using";
+// import Todo from "./components/reducer/reducer_using";
+
+// import Main from "./components/sendMail/main";
+
+import Parent from "./components/childToParent/parent";
 function App() {
   return (
     <>
@@ -92,7 +96,10 @@ function App() {
 
         {/* <Pavan_Task/> */}
 
-        <Todo/>
+        {/* <Todo/> */}
+        {/* <Main/> */}
+
+        <Parent/>
     </>
   );
 }
