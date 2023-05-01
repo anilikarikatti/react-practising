@@ -83,6 +83,8 @@
 // import Main from "./components/sendMail/main";
 
 import Parent from "./components/childToParent/parent";
+
+import {Conditional} from "../src/components/conditional_render/conditional"
 function App() {
   return (
     <>
@@ -99,7 +101,9 @@ function App() {
         {/* <Todo/> */}
         {/* <Main/> */}
 
-        <Parent/>
+        {/* <Parent/> */}
+
+        <Conditional/>
     </>
   );
 }
