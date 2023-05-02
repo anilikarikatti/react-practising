@@ -1,10 +1,10 @@
-import { useState} from 'react';
+import { useEffect, useState} from 'react';
 
 
 export function Conditional (){
     // let [state,setState ] = useState(true)
-    let [state,setState ] = useState(true)
-
+    let [state,setState ] = useState(true);
+   
     if(state){
 
         return <p>hello </p>

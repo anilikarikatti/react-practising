@@ -82,9 +82,11 @@
 
 // import Main from "./components/sendMail/main";
 
-import Parent from "./components/childToParent/parent";
+// import Parent from "./components/childToParent/parent";
 
-import {Conditional} from "../src/components/conditional_render/conditional"
+// import {Conditional} from "../src/components/conditional_render/conditional"
+
+import Counter from "./components/counter/counter";
 function App() {
   return (
     <>
@@ -103,7 +105,9 @@ function App() {
 
         {/* <Parent/> */}
 
-        <Conditional/>
+        {/* <Conditional/> */}
+
+        <Counter />
     </>
   );
 }
